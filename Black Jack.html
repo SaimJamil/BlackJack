@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Black Jack</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+   <script src="blackscript.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="main-Container">
+        <header>
+        </header>
+        <nav>
+        </nav>
+        <div id="banner">
+            <h1>Black Jack</h1>
+        </div>
+
+        <div id="button-Container">
+            <input type="button" onclick="start()" value="Start" id="startbtn"/>
+            <input type="button" value="Hit Me" disabled="disabled" id="hitbtn" onclick="hitme()"/>
+            <input type="button" value="Stay" disabled="disabled" id="staybtn" onclick="stay()"/>
+        </div>
+        <div id="second-Container">
+            <div id="left-Container">
+                <img src="cards.JPG" />
+                <p id="cardsremaining"><b> 52</b></p>
+            </div>
+            <div id="right-Container">
+                <div id="top-Container">
+                    <label id="winner">
+                        <b>
+                            Winner : Player
+                        </b>
+                    </label>
+                </div>
+                <div id="bottom-Container">
+                    <div id="left-cards">
+                        <p><b>Player </b></p>
+                        <div id="player-hands">
+
+                        </div>
+                        <div id="scores">
+                            <p id="playerscore"> <b>Your Score:0   </b></p>
+                        </div>
+                    </div>
+                    <div id="right-cards">
+                        <p> <b>Dealer</b></p>
+                        <div id="dealer-hands">
+                            
+                        </div>
+                        <div id="scores">
+                            <p id="dealerscore"> <b>Dealer Score:--   </b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="footer">
+
+        </div>
+    </div>
+    
+</body>
+</html>

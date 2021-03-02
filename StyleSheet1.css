@@ -1,0 +1,229 @@
+﻿body {
+  margin: 0px;
+  background-size: cover;
+  background-image: url("back1.jpg");
+  overflow-x: hidden;
+}
+
+.main-Container {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+nav {
+  margin-top: 20px;
+  width: 100%;
+  position: fixed;
+  height: 20px;
+  background-color: dimgray;
+}
+
+#banner {
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  height: 70px;
+  background-color: black;
+}
+
+#banner h1 {
+  text-align: center;
+  color: white;
+}
+
+#button-Container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+#button-Container input {
+  background-color: black;
+  color: white;
+  border: 0px;
+  width: 90px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#button-Container input:hover {
+  background-color: red;
+}
+
+#second-Container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#left-Container {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-Container img {
+  width: 100%;
+  height: auto;
+  border: solid;
+  border-width: 3px;
+}
+
+#left-Container p {
+  text-align: center;
+  margin: 5px;
+  color: black;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+}
+
+#right-Container {
+  justify-content: center;
+  width: 100%;
+}
+
+#right-Container label {
+  margin-left: 10px;
+  height: 50px;
+  border: solid;
+  border-width: 5px;
+  background-color: yellow;
+  border: 3px;
+  padding: 15px;
+  display: none;
+  text-align: center;
+}
+
+#top-Container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#top-Container label {
+  justify-content: center;
+  border-radius: 25px;
+  width: fit-content;
+  height: 100%;
+  align-content: center;
+  padding-top: 20px;
+  border: solid;
+  border-width: 3px;
+}
+
+#bottom-Container {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-right: 100px;
+  visibility: hidden;
+}
+
+#left-cards {
+  flex-direction: column;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 5px;
+  width: fit-content;
+  height: auto;
+  background-color: lightgray;
+}
+
+#player-hands,
+#dealer-hands {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#right-cards {
+  flex-direction: column;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 5px;
+  width: fit-content;
+  height: auto;
+  background-color: lightgray;
+  margin-left: 20px;
+}
+
+#left-cards p,
+#right-cards p {
+  text-align: center;
+}
+
+#scores {
+  display: flex;
+  justify-content: center;
+}
+
+#scores p {
+  text-align: center;
+  color: black;
+  align-self: end;
+}
+
+.footer {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  align-self: end;
+  bottom: 0;
+  position: fixed;
+}
+
+.card {
+  text-align: center;
+  width: 65px;
+  height: 70px;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  align-content: center;
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+}
+
+#player-hands,
+#dealer-hands {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #button-Container {
+    margin-top: 80px;
+  }
+
+  #bottom-Container {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  #second-Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    width: 40px;
+  }
+}
